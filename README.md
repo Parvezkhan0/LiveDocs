@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Live Docs
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Live Docs is a real-time collaborative document editor designed to enhance productivity and teamwork. It allows multiple users to work simultaneously on documents, with instant updates, making it an ideal tool for remote collaboration, brainstorming sessions, and document management.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Real-Time Collaboration**: Multiple users can edit documents at the same time, with changes visible in real-time.
+- **User Authentication**: Secure login and session management using NextAuth with GitHub authentication.
+- **Document Management**: Create, edit, delete, and share documents with ease. Manage permissions for collaborators.
+- **Inline and General Comments**: Add, reply, and manage comments directly within documents, supporting threaded discussions.
+- **Active Collaborators**: See who's editing the document in real-time, with presence indicators.
+- **Notifications**: Get notified when a document is shared, when new comments are added, or when collaborators make changes.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🛠 Tech Stack
 
-## Learn More
+- **Next.js**: Framework for the user interface.
+- **TypeScript**: Strongly typed JavaScript for better maintainability.
+- **Liveblocks**: Handles real-time collaboration and synchronization.
+- **Lexical Editor**: A rich text editor built for extensibility.
+- **ShadCN**: Provides pre-styled UI components.
+- **Tailwind CSS**: Utility-first CSS framework for fast styling.
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Quick Start
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Ensure you have the following installed:
+- Git
+- Node.js
+- npm
 
-## Deploy on Vercel
+### Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Parvezkhan0/LiveDocs.git
+   cd LiveDocs
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Set up environment variables:
+   - Create a `.env` file in the project root.
+   - Add your Clerk and Liveblocks API keys:
+     ```bash
+     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+     CLERK_SECRET_KEY=your_clerk_secret
+     NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY=your_liveblocks_key
+     LIVEBLOCKS_SECRET_KEY=your_liveblocks_secret
+     ```
+
+4. Run the project:
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) to view the app.
+
+## 🗂 Project Structure
+
+- **`/app`**: Main application logic.
+- **`/components`**: Reusable UI components.
+- **`/lib`**: Utility functions and configurations.
+- **`/public`**: Public assets like images.
+- **`/styles`**: Global and component-specific styles.
+- **`/types`**: TypeScript types.
+
+
