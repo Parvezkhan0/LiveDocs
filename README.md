@@ -60,7 +60,7 @@ Ensure you have the following installed:
    npm run dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) to view the app.
+5. Open [http://localhost:3000](http://localhost:3000) to view app.
 
 ## 🗂 Project Structure
 
